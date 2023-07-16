@@ -1,5 +1,6 @@
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import CountUp from "react-countup";
 
 const About = () => {
     AOS.init();
@@ -11,10 +12,16 @@ const About = () => {
      >
         <h1 className="heading pb-2">About Me</h1>
            <section className="flex justify-evenly w-4/5 mx-auto mt-20">
-            <div className="w-1/2">
+            <div className="w-1/2 relative">
                 <figure >
                     <img src="https://i.ibb.co/cwsWxV3/02.png" alt="" />
                 </figure>
+                <div className='text-3xl font-medium bg-white w-1/3 text-center shadow-xl rounded-lg py-2 absolute top-[10%]' >
+                    <p ><CountUp delay={1} end={22} duration={3}></CountUp> Years of Experience </p>
+                </div>
+                <div className='text-3xl bg-white w-1/3 text-center shadow-xl rounded-lg py-2 absolute top-[70%] right-[10%]'>
+                    <p><CountUp delay={1} end={220} duration={4}></CountUp> Total Projects </p>
+                </div>
             </div>
             <div className="w-2/5 space-y-3 "
              data-aos="fade-up"
