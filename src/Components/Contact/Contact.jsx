@@ -10,7 +10,7 @@ import 'aos/dist/aos.css';
 
 const Contact = () => {
   AOS.init();
-  const email = "ferdoushasan99@gmail.com";
+  const email = "ferdoushasan40@gmail.com";
   const form = useRef();
   const [user_name, setUser_name] = useState();
   const [user_mail, setUser_mail] = useState();
@@ -53,7 +53,7 @@ const Contact = () => {
       );
   };
   return (
-    <div className="w-11/12 mx-auto my-20">
+    <div name="contact" className="w-11/12 mx-auto my-20">
       <h1 className="heading pb-2">Contact Me</h1>
       <section id="contact" className="mt-20 pb-10 md:pb-36 " data-aos="fade-up">
         <div className="flex flex-wrap p-10  justify-evenly gap-16 mt-10 glass  rounded-tr-3xl rounded-bl-3xl  hover:shadow-xl">
@@ -69,7 +69,7 @@ const Contact = () => {
             <a href="#" className="flex items-center text-xl">
               <FaTelegramPlane className="mr-1 text-orange" />
               <AiOutlineWhatsApp className="mr-1 text-orange" />
-              +880 1902221726
+              +880 1521559026
             </a>{" "}
             <p className="flex items-center text-xl">
               <MdLocationPin className="mr-1 text-orange" /> Dhaka, Bangladesh

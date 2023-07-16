@@ -11,7 +11,7 @@ const Testimonials = () => {
   AOS.init();
 
   return (
-    <section >
+    <section name="testimonials">
         <h1 className='heading pb-2'>Testimonials</h1>
     <div className="flex justify-center items-center h-[60vh]" data-aos="fade-up">
       <div className="w-11/12 ">
@@ -36,6 +36,27 @@ const Testimonials = () => {
            <div className='text-center'>
            <p className="text-lg">I rarely like to write reviews, but the JFD team truly deserve a standing ovation for their customer support, customisation and most importantly, friendliness and professionalism. Many thanks once again for everything and hope that I get to deal with you again in the near future.</p>
            <img className='w-28 mx-auto rounded-full my-8' src="https://i.ibb.co/vVV4pWM/Ferdous.jpg" alt="" />
+           <h1>John Doe</h1>
+           </div>
+          </SwiperSlide>
+          <SwiperSlide className="w-11/12 mx-auto mb-20">
+           <div className='text-center'>
+           <p className="text-lg">I rarely like to write reviews, but the JFD team truly deserve a standing ovation for their customer support, customisation and most importantly, friendliness and professionalism. Many thanks once again for everything and hope that I get to deal with you again in the near future.</p>
+           <img className='w-28 mx-auto my-8 rounded-full' src="https://i.ibb.co/vVV4pWM/Ferdous.jpg" alt="" />
+           <h1>John Doe</h1>
+           </div>
+          </SwiperSlide>
+          <SwiperSlide className="w-11/12 mx-auto mb-20">
+           <div className='text-center'>
+           <p className="text-lg">I rarely like to write reviews, but the JFD team truly deserve a standing ovation for their customer support, customisation and most importantly, friendliness and professionalism. Many thanks once again for everything and hope that I get to deal with you again in the near future.</p>
+           <img className='w-28 mx-auto my-8 rounded-full' src="https://i.ibb.co/vVV4pWM/Ferdous.jpg" alt="" />
+           <h1>John Doe</h1>
+           </div>
+          </SwiperSlide>
+          <SwiperSlide className="w-11/12 mx-auto mb-20">
+           <div className='text-center'>
+           <p className="text-lg">I rarely like to write reviews, but the JFD team truly deserve a standing ovation for their customer support, customisation and most importantly, friendliness and professionalism. Many thanks once again for everything and hope that I get to deal with you again in the near future.</p>
+           <img className='w-28 mx-auto my-8 rounded-full' src="https://i.ibb.co/vVV4pWM/Ferdous.jpg" alt="" />
            <h1>John Doe</h1>
            </div>
           </SwiperSlide>

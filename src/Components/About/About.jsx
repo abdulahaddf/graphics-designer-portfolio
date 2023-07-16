@@ -6,7 +6,7 @@ const About = () => {
     AOS.init();
     return (
        
-     <div className="my-20 bg-cover h-full bg-[url('https://i.ibb.co/V2ZDMdJ/BG-1-01-1.png')] " data-aos="fade-up"
+     <div name="about" className="my-20 bg-cover h-full bg-[url('https://i.ibb.co/V2ZDMdJ/BG-1-01-1.png')] " data-aos="fade-up"
      data-aos-anchor-placement="center-bottom"
      data-aos-duration="600"
      >
@@ -16,11 +16,11 @@ const About = () => {
                 <figure >
                     <img src="https://i.ibb.co/cwsWxV3/02.png" alt="" />
                 </figure>
-                <div className='text-3xl font-medium bg-white w-1/3 text-center shadow-xl rounded-lg py-2 absolute top-[10%]' >
-                    <p ><CountUp delay={1} end={22} duration={3}></CountUp> Years of Experience </p>
+                <div className='text-xl font-medium bg-white w-1/3 text-center shadow-xl rounded-lg py-2 absolute top-[10%]' >
+                    <p className=''><span className='text-5xl text-[#10b981]'>0<CountUp delay={1} end={4} duration={3}></CountUp>+</span><br /> Years of Experience </p>
                 </div>
-                <div className='text-3xl bg-white w-1/3 text-center shadow-xl rounded-lg py-2 absolute top-[70%] right-[10%]'>
-                    <p><CountUp delay={1} end={220} duration={4}></CountUp> Total Projects </p>
+                <div className='text-xl bg-white w-1/3 text-center shadow-xl rounded-lg py-2 absolute top-[70%] right-[10%]'>
+                <p className=''><span className='text-5xl text-[#6366f1]'><CountUp delay={1} end={500} duration={3}></CountUp>+</span><br /> Total Projects </p>
                 </div>
             </div>
             <div className="w-2/5 space-y-3 "

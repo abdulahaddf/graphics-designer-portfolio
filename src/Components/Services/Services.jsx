@@ -3,9 +3,10 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 const Services = () => {
+  
   AOS.init();
   return (
-    <div className="w-4/5 mx-auto my-24">
+    <div name="services" className="w-4/5 mx-auto my-24">
       <h1 className="heading pb-2">My Services</h1>
       <section className="grid grid-cols-2 gap-4  justify-self-center items-center mt-16">
 
@@ -52,9 +53,7 @@ const Services = () => {
     
 
       </section>
-      <div className="text-center mt-10">
-        <Link className="btn-new">See More</Link>
-      </div>
+     
     </div>
   );
 };

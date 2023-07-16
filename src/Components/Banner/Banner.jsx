@@ -1,10 +1,12 @@
 import { TypeAnimation } from "react-type-animation";
 import SocialLinks from "../SocialLinks/SocialLinks";
+import {AiOutlineDownCircle } from "react-icons/ai";
+import { Link } from 'react-scroll'
 
 
 const Banner = () => {
     return (
-        <div>
+        <div name="home">
            <section className="md:flex justify-between  w-11/12 mx-auto pt-14 md:pt-40">
             <div className="md:w-3/5 md:space-y-2">
                 <h3 className="text-orange md:text-4xl">Hello, I&apos;m</h3>
@@ -26,8 +28,8 @@ const Banner = () => {
   style={{ fontSize: '1.5em' }}
   repeat={Infinity}
 />
-<p className="md:text-3xl text-orange font-bold pt-2">Unleashing The Power Of Your Brand </p>
-<p className="md:text-xl">With a keen eye for design and a deep understanding of brand identity, I am dedicated to crafting visually stunning and meaningful logos that truly represent your business.</p>
+<p className="md:text-4xl text-orange pt-5 ">Unleashing The Power Of Your Brand </p>
+<p className="md:text-xl pb-5">With a keen eye for design and a deep understanding of brand identity, I am dedicated to crafting visually stunning and meaningful logos that truly represent your business.</p>
 
 
 <SocialLinks></SocialLinks>
@@ -51,7 +53,10 @@ const Banner = () => {
 
 
            </section>
-           
+           <Link className="text-3xl text-center flex justify-center text-[#ccdbee]" activeClass="active" to="about" spy={true} smooth={true} offset={-110} duration={500} >
+           <AiOutlineDownCircle></AiOutlineDownCircle>
+                  </Link>
+          
         </div>
     );
 };
