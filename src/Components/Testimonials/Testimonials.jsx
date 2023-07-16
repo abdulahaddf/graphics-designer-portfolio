@@ -4,14 +4,16 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Testimonials = () => {
- 
+  AOS.init();
 
   return (
     <section >
         <h1 className='heading pb-2'>Testimonials</h1>
-    <div className="flex justify-center items-center h-[60vh]">
+    <div className="flex justify-center items-center h-[60vh]" data-aos="fade-up">
       <div className="w-11/12 ">
         <Swiper
           spaceBetween={30}
@@ -20,6 +22,7 @@ const Testimonials = () => {
             delay: 5000,
             disableOnInteraction: false,
           }}
+          onDurationChange={5000}
           pagination={{
             clickable: true,
           }}
