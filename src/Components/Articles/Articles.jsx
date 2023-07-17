@@ -4,6 +4,7 @@ import 'aos/dist/aos.css';
 const Articles = () => {
     AOS.init();
     
+    
   return (
     <section name="articles" className="w-4/5 mx-auto my-24">
         <h1 className="heading pb-2">Articles</h1>

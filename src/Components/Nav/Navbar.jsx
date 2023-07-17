@@ -3,8 +3,12 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Link } from 'react-scroll'
 import { AiFillUpCircle } from "react-icons/ai";
 
+import HomeLink from "../SocialLinks/HomeLink";
+import LogoLink from "../SocialLinks/LogoLink";
+
 
 const Navbar = () => {
+  // const isAdmin = true;
   return (
     <Disclosure as="nav" className="">
       {({ open }) => (
@@ -25,21 +29,13 @@ const Navbar = () => {
               </div>
               <div className="flex justify-evenly items-center w-11/12 ml-16 md:w-[96%] mx-auto">
                
-                 <a href="/">
-                 <img
-                    className="w-36 md:w-72"
-                    src="https://i.ibb.co/q0Sgb2S/Logo-01-1.png"
-                    alt="logo"
-                  />
-                 </a>
+                <LogoLink></LogoLink>
                  
              
                 <div className="hidden sm:ml-6 sm:block">
                   <ul className="flex px-1 font-normal text-xl space-x-5 ">
 
-                  <a href="/" className="hover:text-orange hover:scale-125 duration-300" >
-                   Home
-                  </a>
+                 <HomeLink></HomeLink>
                   <Link className="hover:text-orange hover:scale-125 duration-300" activeClass="active" to="about" spy={true} smooth={true} offset={-110} duration={500} >
                    About
                   </Link>
@@ -53,7 +49,7 @@ const Navbar = () => {
                   <Link className="hover:text-orange hover:scale-125 duration-300" activeClass="active" to="articles" spy={true} smooth={true} offset={-20} duration={500} >
                    Articles
                   </Link>
-                 
+                
                  
 
                   <div className="fixed right-1 bottom-1 text-6xl ">
