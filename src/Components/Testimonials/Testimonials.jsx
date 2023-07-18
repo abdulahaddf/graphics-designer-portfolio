@@ -53,7 +53,7 @@ moon with the results. Highly recommend & will use again.</p>
            <div className='text-center'>
            <p className="text-lg">Ferdous was incredibly responsive and did an excellent job on the logo I wanted. He promptly
 replied to my requests and made all the necessary changes, resulting in a great final design.</p>
-           <img className='w-28 mx-auto my-8 rounded-full' src="https://i.ibb.co/DM2B1d6/Client-3.jpg" alt="" />
+           <img className='w-28 mx-auto my-8 rounded-full' src="https://i.ibb.co/bH8rNFz/Client-5.jpg " alt="" />
            <h1>Sophia Engel</h1>
            </div>
           </SwiperSlide>
@@ -73,8 +73,8 @@ attention to my project and would definitely use his design services again.</p>
            <p className="text-lg">Ferdous always works his magic on every brief. I have used him before, and I will use him again.
 I sent him a simple brief, and the logo just came out well and resonated with what I had in mind.
 Hire him!</p>
-           <img className='w-28 mx-auto my-8 rounded-full' src="https://i.ibb.co/bH8rNFz/Client-5.jpg" alt="" />
-           <h1>Storitellah</h1>
+           <img className='w-28 mx-auto my-8 rounded-full' src="https://i.ibb.co/DM2B1d6/Client-3.jpg" alt="" />
+           <h1>Micle</h1>
            </div>
           </SwiperSlide>
           <SwiperSlide className="w-11/12 mx-auto mb-20">

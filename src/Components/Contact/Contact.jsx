@@ -62,16 +62,16 @@ const Contact = () => {
             <h1 className="text-3xl">Have you any query? lets discuss </h1>{" "}
             <p className="flex items-center text-xl">
               <MdEmail className="mr-1 text-orange" />
-              <a href="mailto:abdulahad.df1@gmail.com" className="">
+              <a href="mailto:abdulahad.df1@gmail.com" className="hover:text-orange">
                 {email}
               </a>
             </p>{" "}
-            <a href="#" className="flex items-center text-xl">
+            <a href="#" className="flex items-center text-xl hover:text-orange">
               <FaTelegramPlane className="mr-1 text-orange" />
               <AiOutlineWhatsApp className="mr-1 text-orange" />
               +880 1521559026
             </a>{" "}
-            <p className="flex items-center text-xl">
+            <p className="flex items-center text-xl hover:text-orange">
               <MdLocationPin className="mr-1 text-orange" /> Dhaka, Bangladesh
             </p>
             <SocialLinks></SocialLinks>

@@ -6,6 +6,7 @@ import { AiFillUpCircle } from "react-icons/ai";
 import HomeLink from "../SocialLinks/HomeLink";
 import LogoLink from "../SocialLinks/LogoLink";
 import { useEffect, useState } from "react";
+import Download from "./Download";
 
 
 const Navbar = () => {
@@ -73,7 +74,7 @@ const Navbar = () => {
                 
                  
 
-                  <div className="fixed right-1 bottom-1 text-6xl ">
+                  <div className="fixed right-1 bottom-1 text-6xl z-40">
          <Link className="hover:text-orange hover:shadow-xl z-10" activeClass="active" to="home" spy={true} smooth={true} offset={-150} duration={500} >
                  <AiFillUpCircle/>
                   </Link>
@@ -82,7 +83,7 @@ const Navbar = () => {
                   </ul>
                 </div>
                 <div className="flex gap-2">
-                    <Link  to="/resume.pdf" target="_blank" className="btn-custom md:w-48" download >Download CV</Link>
+                  <Download></Download>
                     <label className="swap swap-rotate">
               {/* this hidden checkbox controls the state */}
               <input
