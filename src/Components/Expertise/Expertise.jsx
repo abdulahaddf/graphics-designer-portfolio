@@ -6,7 +6,7 @@ const Expertise = () => {
     return (
       <section name="expertise" className="my-20 bg-cover bg-[url('https://i.ibb.co/cLWYh47/BG-2-01-2.png')]">
   <h1 className="heading pb-2">Why me ! </h1>
-        <div className="flex items-center gap-3 content-center text-center mt-5 w-11/12 mx-auto h-[50vh]" >
+        <div className="md:flex items-center gap-3 content-center space-y-5 text-center mt-5 w-11/12 mx-auto md:h-[50vh] " >
         
           <div className="glass p-5 rounded-tr-3xl rounded-bl-3xl  hover:shadow-xl"  data-aos="fade-up"
      data-aos-anchor-placement="center-bottom"
@@ -33,9 +33,10 @@ const Expertise = () => {
               or designing websites that work well on desktop is responsive and adaptive design.</p>
          </div>
         </div>
-        <div className="w-1/3 mx-auto mt-5"  data-aos="fade-up"
+        <div className="w-11/12 md:w-1/3 mx-auto mt-7 md:mt-5 "  data-aos="fade-up"
      data-aos-anchor-placement="center-bottom"
-     data-aos-duration="1000"><img src="https://i.ibb.co/RBMhbQw/Nice-Png-logo-designing-png-2457488.png" alt="" /></div>
+     data-aos-duration="1000"><img src="https://i.ibb.co/RBMhbQw/Nice-Png-logo-designing-png-2457488.png" alt="" />
+     </div>
       </section>
     );
 };

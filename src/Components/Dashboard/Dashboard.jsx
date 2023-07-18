@@ -53,25 +53,7 @@ const Dashboard = () => {
                   />
                 </Link>
               </div>
-              <div className="flex flex-col items-center mt-6 -mx-2">
-                {/* <Link to="/dashboard/welcome">
-                  <img
-                    className="object-cover w-20 h-20 mx-2 rounded-2xl border-2 border-white"
-                    src={user?.photoURL}
-                    alt="avatar"
-                    referrerPolicy="no-referrer"
-                  />
-                </Link> */}
-                {/* <Link to="/dashboard/welcome">
-                  <h4 className="mx-2 mt-2 font-medium text-white  hover:underline">
-                    {user?.displayName}
-                  </h4>
-                </Link>
-
-                <p className="mx-2 mt-1 text-sm font-medium text-white hover:underline">
-                  {user?.email}
-                </p> */}
-              </div>
+              
             </div>
             <br />
             <hr />
@@ -80,7 +62,7 @@ const Dashboard = () => {
             <div className="text-white font-medium text-md">
              
                 <>
-                  {/* links for normal user */}
+                
                   <li>
                     <NavLink
                       className={({ isActive }) =>
@@ -113,8 +95,37 @@ const Dashboard = () => {
 
             <hr className="mt-4"/>
             <hr />
-           
+            <>
+                
+                  <li>
+                    <NavLink
+                      className={({ isActive }) =>
+                        isActive
+                          ? "bg-white text-black "
+                          : "text-white link link-hover"
+                      }
+                      to="/dashboard/postProject"
+                    >
+                      <FaRegFlag></FaRegFlag>Post Your Project
+                    </NavLink>
+                  </li>
 
+                  <li>
+                    <NavLink
+                      className={({ isActive }) =>
+                        isActive
+                          ? "text-black bg-white"
+                          : "text-white link link-hover"
+                      }
+                      to="/dashboard/manageProject"
+                    >
+                      <AiOutlineSelect></AiOutlineSelect>Manage Projects
+                    </NavLink>
+                  </li>
+                
+                </>
+                <hr className="mt-4"/>
+            <hr />
         
 
           

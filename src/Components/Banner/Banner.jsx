@@ -2,10 +2,14 @@ import { TypeAnimation } from "react-type-animation";
 import SocialLinks from "../SocialLinks/SocialLinks";
 import {AiOutlineDownCircle } from "react-icons/ai";
 import { Link } from 'react-scroll'
+import './style.css';
+
 
 
 
 const Banner = () => {
+
+
     return (
         <div name="home">
            <section className="md:flex justify-between  w-11/12 mx-auto pt-14 md:pt-40">
@@ -30,7 +34,7 @@ const Banner = () => {
   repeat={Infinity}
 />
 <p className="md:text-4xl text-orange pt-5 ">Unleashing The Power Of Your Brand </p>
-<p className="md:text-xl pb-5">With a keen eye for design and a deep understanding of brand identity, I am dedicated to crafting visually stunning and meaningful logos that truly represent your business.</p>
+<p className="md:text-xl pb-5">With a keen eye for design and a deep understanding of Brand Identity, I am dedicated to crafting visually stunning and meaningful Logos that truly represent your business.</p>
 
 
 <SocialLinks></SocialLinks>
@@ -41,13 +45,13 @@ const Banner = () => {
   <figure className="relative">
     <img className="w-full" src="https://i.ibb.co/Rzz5rRQ/Image.png" alt="" />
 
-    <img className="w-12 absolute top-[33vh] left-[68vw] animate-bounce duration-500 md:w-8 md:top-[25%] md:left-[55%] lg:w-10 lg:top-[20%] lg:left-[20%]"
+    <img className="w-12 absolute top-[9vh] left-[8vw] animate-bounce custom-animation duration-500 md:w-8 md:top-[25%] md:left-[55%] lg:w-10 lg:top-[20%] lg:left-[20%]"
       src="https://i.ibb.co/zJP27gr/Adobe-Creative-Cloud-rainbow-icon-svg.png" alt="" />
 
-    <img className="w-12 absolute top-[28vh] left-[86vw] animate-bounce md:w-8 md:top-[20%] md:left-[70%] lg:w-10 lg:top-[12%] lg:left-[75%]"
+    <img className="w-12 absolute top-[6vh] left-[80vw] animate-bounce custom-animation md:w-8 md:top-[20%] md:left-[70%] lg:w-10 lg:top-[12%] lg:left-[75%]"
       src="https://i.ibb.co/pxjzJNL/ps-1.png" alt="" />
 
-    <img className="w-12 absolute animate-bounce top-[77vh] left-[89vw] md:w-8 md:top-[65%] md:left-[80%] lg:w-10 lg:top-[80%] lg:left-[82%]"
+    <img className="w-12 absolute animate-bounce custom-animation top-[40vh] left-[70vw] md:w-8 md:top-[65%] md:left-[80%] lg:w-10 lg:top-[80%] lg:left-[82%]"
       src="https://i.ibb.co/0FW6P8Z/Adobe-Illustrator-CC-icon-svg.png" alt="" />
   </figure>
 </div>

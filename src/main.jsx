@@ -14,6 +14,9 @@ import CreateArticle from './Components/Dashboard/CreateArticle';
 import ManageArticle from './Components/Dashboard/ManageArticle';
 import Admin from './pages/admin/Admin';
 import SingleArticle from './Components/Articles/SingleArticle';
+import PostProject from './Components/Dashboard/PostProject';
+import ManageProject from './Components/Dashboard/ManageProject';
+import AllProject from './Components/Projects/AllProject';
 
 
 
@@ -40,6 +43,10 @@ const router = createBrowserRouter([
         path:"/admin",
         element:<Admin></Admin>
       },
+      {
+        path:"/allProjects",
+        element:<AllProject></AllProject>
+      },
      
     ]
   },
@@ -58,6 +65,14 @@ const router = createBrowserRouter([
       {
         path:"/dashboard/manage",
         element:<ManageArticle></ManageArticle>
+      },
+      {
+        path:"/dashboard/postProject",
+        element:<PostProject></PostProject>
+      },
+      {
+        path:"/dashboard/manageProject",
+        element:<ManageProject></ManageProject>
       },
     ],
   }

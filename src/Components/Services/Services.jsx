@@ -5,9 +5,9 @@ import { TfiHandPointRight } from "react-icons/tfi";
 const Services = () => {
   AOS.init();
   return (
-    <div name="services" className="w-4/5 mx-auto my-24">
+    <div name="services" className="w-4/5 mx-auto my-20 md:my-24  ">
       <h1 className="heading pb-2">My Services</h1>
-      <section className="grid grid-cols-2 gap-4  justify-self-center items-center mt-16">
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-4  justify-self-center items-center mt-16">
         <div
           className="glass p-5 rounded-tr-3xl rounded-bl-3xl  hover:shadow-xl"
           data-aos="fade-up"
@@ -15,7 +15,7 @@ const Services = () => {
           <div className="w-2/6 mx-auto">
             {" "}
             <img
-              className=""
+              className="transition duration-200 transform hover:-translate-y-2"
               src="https://i.ibb.co/4JKQCJn/Unique-Idea.png"
               alt=""
             />
@@ -94,7 +94,7 @@ const Services = () => {
           <div className="w-2/6 mx-auto">
             {" "}
             <img
-              className=""
+              className="transition duration-200 transform hover:-translate-y-2"
               src="https://i.ibb.co/WyQJrnr/Pixel-Perfect.png"
               alt=""
             />
@@ -179,7 +179,7 @@ const Services = () => {
           <div className="w-2/6 mx-auto">
             {" "}
             <img
-              className=""
+              className="transition duration-200 transform hover:-translate-y-2"
               src="https://i.ibb.co/0Xp6VH3/Platinum-Package.png"
               alt=""
             />
@@ -274,7 +274,7 @@ const Services = () => {
           <div className="w-2/6 mx-auto">
             {" "}
             <img
-              className=""
+              className="transition duration-200 transform hover:-translate-y-2"
               src="https://i.ibb.co/FK606fz/Palladium-Package.png"
               alt=""
             />

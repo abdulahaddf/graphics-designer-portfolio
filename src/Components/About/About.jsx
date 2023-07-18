@@ -1,9 +1,20 @@
+/* eslint-disable react/no-unescaped-entities */
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import CountUp from "react-countup";
-
+import animationData from '../../../public/ani.json';
+import Lottie from 'react-lottie';
+import { Link } from 'react-router-dom';
 const About = () => {
     AOS.init();
+    const defaultOptions = {
+        loop: true,
+        autoplay: true,
+        animationData: animationData,
+        rendererSettings: {
+          preserveAspectRatio: 'xMidYMid slice'
+        }
+      };
     return (
        
      <div name="about" className="my-20 bg-cover h-full bg-[url('https://i.ibb.co/V2ZDMdJ/BG-1-01-1.png')] " data-aos="fade-up"
@@ -11,19 +22,19 @@ const About = () => {
      data-aos-duration="600"
      >
         <h1 className="heading pb-2">About Me</h1>
-           <section className="flex justify-evenly w-4/5 mx-auto mt-20">
-            <div className="w-1/2 relative">
-                <figure >
-                    <img src="https://i.ibb.co/cwsWxV3/02.png" alt="" />
-                </figure>
-                <div className='text-xl font-medium bg-white w-1/3 text-center shadow-xl rounded-lg py-2 absolute top-[10%]' >
-                    <p className=''><span className='text-5xl text-[#10b981]'>0<CountUp delay={1} end={4} duration={3}></CountUp>+</span><br /> Years of Experience </p>
+           <section className="md:flex justify-evenly w-4/5 mx-auto mt-20">
+            <div className="md:w-1/2 relative">
+                <div className='w-11/12 mx-auto md:-ml-10'>
+                <Lottie options={defaultOptions} />
                 </div>
-                <div className='text-xl bg-white w-1/3 text-center shadow-xl rounded-lg py-2 absolute top-[70%] right-[10%]'>
-                <p className=''><span className='text-5xl text-[#6366f1]'><CountUp delay={1} end={500} duration={3}></CountUp>+</span><br /> Total Projects </p>
+                <div className='text-xl font-medium bg-white md:h-[87px]  text-center shadow-xl rounded-lg px-2 py-2  absolute left-[-10%] bottom-[80%] md:top-[10%]' >
+                    <p className=''><span className='text-3xl md:text-5xl text-[#10b981]'>0<CountUp delay={1} end={4} duration={3}></CountUp>+</span><br /> Years of Experience </p>
+                </div>
+                <div className='text-xl bg-white md:w-48 text-center shadow-xl rounded-lg p-2 absolute top-[80%] md:top-[70%] left-[70%] md:right-[10%]'>
+                <p className=''><span className='text-3xl md:text-5xl text-[#6366f1]'><CountUp delay={1} end={500} duration={3}></CountUp>+</span><br /> Total Projects </p>
                 </div>
             </div>
-            <div className="w-2/5 space-y-3 "
+            <div className="md:w-2/5 space-y-3 mt-10 md:mt-0"
              data-aos="fade-up"
              data-aos-anchor-placement="center-bottom"
              data-aos-duration="900"
@@ -31,10 +42,12 @@ const About = () => {
                 <p className="text-orange text-xl">I&apos;m a Designer</p>
                 <h3 className="text-4xl font-medium">I Can Design Anything You Want</h3>
                 <p className="">
-                Hello there! I’m a web designer, and I’m very passionate and dedicated to my work. With 20 years experience as a professional web developer, I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step of the design process, from discussion and collaboration.
+                I am a visionary brand identity designer, passionate about crafting compelling visual narratives that captivate audiences and elevate brands to new heights. With a keen eye for detail and a deep understanding of market trends, I seamlessly blend creativity with strategy to deliver impactful design solutions that leave a lasting impression. Let me transform your brand's identity into a masterpiece that resonates with your target audience and sets you apart in today's competitive landscape.
                 </p>
-             
-               <div className="pt-5"> <button className="btn-new">Hire Me</button></div>
+             <div className="pt-10">
+             <Link to="https://www.upwork.com/freelancers/~016b9b83bc11e596e3" target='_blank' > <button className="btn-new">Hire Me</button></Link>
+             </div>
+              
             </div>
         </section>
      </div>
