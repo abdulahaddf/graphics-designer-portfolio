@@ -8,10 +8,10 @@ import './style.css';
 
 
 const Banner = () => {
-
+  
 
     return (
-        <div name="home">
+        <div name="home" >
            <section className="md:flex justify-between  w-11/12 mx-auto pt-14 md:pt-40">
             <div className="md:w-3/5 md:space-y-2">
                 <h3 className="text-orange md:text-4xl">Hello, I&apos;m</h3>

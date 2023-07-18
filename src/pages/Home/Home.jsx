@@ -13,10 +13,10 @@ import Testimonials from "../../Components/Testimonials/Testimonials";
 
 
 const Home = () => {
-    const theme = localStorage.getItem("theme") || "light";
+  
     return (
-        <div className={`dark:${theme === 'dark' ? 'text-white' : ''}`}>
-            <div className="md:h-[100vh]  bg-cover bg-[url('https://i.ibb.co/7k33Jxm/BG-1.png')] dark:text-white" >
+        <div >
+            <div className="md:h-[100vh]  bg-cover bg-[url('https://i.ibb.co/7k33Jxm/BG-1.png')] " >
             <Navbar></Navbar>
             
             <Banner></Banner>   

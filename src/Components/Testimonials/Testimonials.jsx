@@ -11,7 +11,7 @@ const Testimonials = () => {
   AOS.init();
 
   return (
-    <section name="testimonials">
+    <section name="testimonials" className='my-5'>
         <h1 className='heading my-20 md:my-0 pb-2'>Testimonials</h1>
     <div className="flex justify-center items-center h-[60vh]" data-aos="fade-up">
       <div className="w-11/12 ">
