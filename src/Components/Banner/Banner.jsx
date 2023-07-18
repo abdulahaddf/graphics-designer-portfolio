@@ -4,6 +4,7 @@ import {AiOutlineDownCircle } from "react-icons/ai";
 import { Link } from 'react-scroll'
 
 
+
 const Banner = () => {
     return (
         <div name="home">

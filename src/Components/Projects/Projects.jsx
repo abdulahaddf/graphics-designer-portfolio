@@ -3,9 +3,10 @@
 const Projects = () => {
     return (
         <div>
-            <h1>
+            <h1 className="heading">
                 Projects
             </h1>
+                
         </div>
     );
 };

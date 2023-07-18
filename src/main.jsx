@@ -13,6 +13,7 @@ import Welcome from './Components/Dashboard/Welcome';
 import CreateArticle from './Components/Dashboard/CreateArticle';
 import ManageArticle from './Components/Dashboard/ManageArticle';
 import Admin from './pages/admin/Admin';
+import SingleArticle from './Components/Articles/SingleArticle';
 
 
 
@@ -28,6 +29,12 @@ const router = createBrowserRouter([
       {
         path:"/articles",
         element:<AllArticles></AllArticles>
+      },
+      {
+        path:"/singlearticles/:id",
+        element:<SingleArticle></SingleArticle>,
+        loader: ({ params }) =>
+        fetch(`http://localhost:5000/singlearticles/${params.id}`),
       },
       {
         path:"/admin",

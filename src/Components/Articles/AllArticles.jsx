@@ -23,11 +23,11 @@ const AllArticles = () => {
     <div>
       <Navbar />
       <h1 className="heading mt-20">All Articles</h1>
-      <section className="grid grid-cols-2 gap-4 w-11/12 mx-auto justify-center items-center mt-16 z-10">
+      <section className="grid grid-cols-2 gap-4 w-11/12 mx-auto justify-center items-center my-20 z-10">
         {articles.map((art) => (
         
             <div key={art._id}
-              className="glass p-5 rounded-tr-3xl rounded-bl-3xl flex gap-2 hover:shadow-xl h-[35vh]"
+              className="glass p-5 rounded-tr-3xl rounded-bl-3xl flex gap-2 hover:shadow-xl h-[35vh] "
              
             >
               <div>
@@ -35,9 +35,13 @@ const AllArticles = () => {
               </div>
               <div className="flex flex-col justify-between">
                 <h1 className="font-semibold text-xl text-orange">{art.articleName}</h1>
-                <p className="my-2">{art.description}</p>
+                <p className="my-2">
+            {art.description.length > 150
+              ? `${art.description.substring(0, 150)}...`
+              : art.description}
+          </p>
                 <div className="flex justify-end">
-                  <Link className="btn-custom">Read More</Link>
+                  <Link to={`/singlearticles/${art._id}`} className="btn-custom">Read More</Link>
                 </div>
               </div>
             </div>

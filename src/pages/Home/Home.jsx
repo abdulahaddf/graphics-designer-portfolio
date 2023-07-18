@@ -6,6 +6,7 @@ import Contact from "../../Components/Contact/Contact";
 import Expertise from "../../Components/Expertise/Expertise";
 
 import Navbar from "../../Components/Nav/Navbar";
+import Projects from "../../Components/Projects/Projects";
 import Services from "../../Components/Services/Services";
 import Testimonials from "../../Components/Testimonials/Testimonials";
 
@@ -19,6 +20,7 @@ const Home = () => {
             <Banner></Banner>
             </div>
          <About></About>
+         <Projects></Projects>
          <Expertise></Expertise>
          <Services></Services>
          <Articles></Articles>

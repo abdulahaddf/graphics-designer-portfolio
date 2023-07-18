@@ -12,9 +12,24 @@ const Services = () => {
 
       <div className="glass p-5 rounded-tr-3xl rounded-bl-3xl  hover:shadow-xl"data-aos="fade-up"  >
            <div className="w-fit mx-auto " > <img src="https://i.ibb.co/4sR7CZY/i1-1.png" alt="" /></div>
-            <h1 className="font-semibold text-xl py-2 text-orange">Pixel Perfect</h1>
-            <p className="my-5">Most common methods f
-              or designing websites that work well on desktop is responsive and adaptive design.</p>
+            <h1 className="font-semibold text-xl py-2 text-orange">Starter $75 (25% off from $100)</h1>
+            <p className="my-5">
+              <ul></ul>
+              <ul></ul>
+              <ul></ul>
+              <ul></ul>
+              <ul></ul>
+              <ul></ul>
+              <ul></ul>
+1 Logo from multiple sketches
+Typography and Color variations
+Logo transparency                
+Printable files                        
+Vector files     
+High resolution          
+Copyright transfer              
+
+</p>
               <div className="flex justify-end">
 
               <Link className="btn-custom ">Buy Now</Link>
