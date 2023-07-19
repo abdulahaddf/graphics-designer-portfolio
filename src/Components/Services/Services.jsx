@@ -16,8 +16,8 @@ const Services = () => {
             {" "}
             <img
               className="transition duration-200 transform hover:-translate-y-2"
-              src="https://i.ibb.co/4JKQCJn/Unique-Idea.png"
-              alt=""
+              src="https://i.ibb.co/GWstkLg/Starter-Package.png"
+              alt="starter-package"
             />
           </div>
           <div>
@@ -95,8 +95,8 @@ const Services = () => {
             {" "}
             <img
               className="transition duration-200 transform hover:-translate-y-2"
-              src="https://i.ibb.co/WyQJrnr/Pixel-Perfect.png"
-              alt=""
+              src="https://i.ibb.co/Khrft5p/Gold-Package.png"
+              alt="gold-package"
             />
           </div>
           <div>
@@ -181,7 +181,7 @@ const Services = () => {
             <img
               className="transition duration-200 transform hover:-translate-y-2"
               src="https://i.ibb.co/0Xp6VH3/Platinum-Package.png"
-              alt=""
+              alt="platinum-package"
             />
           </div>
           <div>
@@ -276,7 +276,7 @@ const Services = () => {
             <img
               className="transition duration-200 transform hover:-translate-y-2"
               src="https://i.ibb.co/FK606fz/Palladium-Package.png"
-              alt=""
+              alt="palladium-package"
             />
           </div>
           <div>

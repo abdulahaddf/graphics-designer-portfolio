@@ -36,11 +36,11 @@ const AllArticles = () => {
               <h1 className="font-semibold text-xl text-orange">
                 {art.articleName}
               </h1>
-              <p className="my-2">
+              <article className="my-2">
                 {art.description.length > 150
                   ? `${art.description.substring(0, 150)}...`
                   : art.description}
-              </p>
+              </article>
               <div className="flex justify-end">
                 <Link to={`/singlearticles/${art._id}`} className="btn-custom">
                   Read More

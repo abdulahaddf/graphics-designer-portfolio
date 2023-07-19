@@ -14,11 +14,13 @@ import SingleArticle from "./Components/Articles/SingleArticle";
 import PostProject from "./Components/Dashboard/PostProject";
 import ManageProject from "./Components/Dashboard/ManageProject";
 import AllProject from "./Components/Projects/AllProject";
+import ErrorPage from "./Components/Shared/ErrorPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <HomeLayout></HomeLayout>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",

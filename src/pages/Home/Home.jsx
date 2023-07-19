@@ -16,7 +16,7 @@ const Home = () => {
   
     return (
         <div >
-            <div className="md:h-[100vh]  bg-cover bg-[url('https://i.ibb.co/7k33Jxm/BG-1.png')] " >
+            <div className="lg:h-[100vh]  bg-cover bg-[url('https://i.ibb.co/7k33Jxm/BG-1.png')] " >
             <Navbar></Navbar>
             
             <Banner></Banner>   

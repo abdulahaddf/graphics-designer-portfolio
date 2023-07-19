@@ -11,8 +11,8 @@ const Testimonials = () => {
   AOS.init();
 
   return (
-    <section name="testimonials" className='my-5'>
-        <h1 className='heading my-20 md:my-0 pb-2'>Testimonials</h1>
+    <section name="testimonials" className='my-20 lg:my-5 '>
+        <h1 className='heading my-10 mb-24 md:mb-0 pb-2 '>Testimonials</h1>
     <div className="flex justify-center items-center h-[60vh]" data-aos="fade-up">
       <div className="w-11/12 ">
         <Swiper
@@ -74,7 +74,7 @@ attention to my project and would definitely use his design services again.</p>
 I sent him a simple brief, and the logo just came out well and resonated with what I had in mind.
 Hire him!</p>
            <img className='w-28 mx-auto my-8 rounded-full' src="https://i.ibb.co/DM2B1d6/Client-3.jpg" alt="" />
-           <h1>Micle</h1>
+           <h1>Michle</h1>
            </div>
           </SwiperSlide>
           <SwiperSlide className="w-11/12 mx-auto mb-20">

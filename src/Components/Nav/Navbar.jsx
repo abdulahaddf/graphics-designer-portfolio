@@ -36,7 +36,7 @@ const Navbar = () => {
           <div className=" h-10 py-5 ">
             <div className=" flex items-center relative">
              
-              <div className="absolute  left-2 bottom-2 flex items-center sm:hidden mr-10 z-40 ">     {/* sm:hidden */}
+              <div className="absolute  left-2 bottom-2 flex items-center lg:hidden mr-10 z-40 ">     {/* sm:hidden */}
                 {/* Mobile menu button*/}
                 <Disclosure.Button className="flex justify-center items-center rounded-md  text-black hover:bg-orange hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-orange z-10">
                   <span className="sr-only">Open main menu</span>
@@ -52,7 +52,7 @@ const Navbar = () => {
                 <LogoLink></LogoLink>
                  
              
-                <div className="hidden sm:ml-6 sm:block">
+                <div className="hidden sm:ml-6 lg:block">
                   <ul className="flex px-1 font-normal text-xl space-x-5 ">
                     <li className="hover:scale-125 duration-300">
 
@@ -119,7 +119,7 @@ const Navbar = () => {
             </div>
           </div>
 
-          <Disclosure.Panel className="sm:hidden z-40">  {/* sm:hidden */}
+          <Disclosure.Panel className="lg:hidden mt-0 md:mt-5 z-40">  {/* sm:hidden */}
             <ul className="mt-4 px-1 font-bold text-lg absolute text-center w-full bg-white flex flex-col">
             
                   <Link className="hover:text-orange hover:scale-125 duration-300" activeClass="active" to="about" spy={true} smooth={true} offset={-110} duration={500} >
