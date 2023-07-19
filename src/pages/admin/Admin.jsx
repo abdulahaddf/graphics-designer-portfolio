@@ -11,7 +11,7 @@ const Admin = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Email:', email);
-    console.log('Password:', password);
+    // console.log('Password:', password);
     if(email == 'ferdous99' && password == '161049'){
         navigate('/dashboard/welcome');
        

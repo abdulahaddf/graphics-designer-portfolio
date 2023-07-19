@@ -32,7 +32,7 @@ const Projects = () => {
               <img
                 src={pro.imageURL}
                 alt="project"
-                className="object-cover w-full transition-all duration-300 transform hover:scale-110"
+                className="object-cover lg:max-w-[600px] transition-all duration-300 transform hover:scale-110"
               />
             </div>
             <p className="py-3 text-3xl text-center">{pro.title}</p>

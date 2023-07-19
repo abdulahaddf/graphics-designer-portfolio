@@ -1,10 +1,16 @@
-import { useState } from "react";
+import { useState, useRef } from 'react';
+import JoditEditor from 'jodit-react';
 import Swal from "sweetalert2";
+
+
+
 
 const CreateArticle = () => {
   const [articleName, setArticleName] = useState("");
   const [imageURL, setImageURL] = useState("");
   const [description, setDescription] = useState("");
+  const editor = useRef(null);
+	
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -36,8 +42,8 @@ const CreateArticle = () => {
 
   return (
     <div>
-      <h1 className="heading my-20">Create An Article</h1>
-      <form onSubmit={handleSubmit} className="max-w-lg mx-auto">
+      <h1 className="heading my-10">Create An Article</h1>
+      <form onSubmit={handleSubmit} className="max-w-3xl mx-auto">
         <div className="mb-4">
           <label
             htmlFor="articleName"
@@ -48,6 +54,7 @@ const CreateArticle = () => {
           <input
             type="text"
             id="articleName"
+            required
             className="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:border-orange"
             value={articleName}
             onChange={(e) => setArticleName(e.target.value)}
@@ -75,13 +82,26 @@ const CreateArticle = () => {
           >
             Description
           </label>
-          <textarea
+          {/* <textarea
             id="description"
             className="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none
            focus:border-orange"
             value={description}
             onChange={(e) => setDescription(e.target.value)}
-          ></textarea>
+          ></textarea> */}
+
+
+<JoditEditor
+      id="description"
+			ref={editor}
+			value={description}
+			tabIndex={1} // tabIndex of textarea
+			
+			onChange={newDescription => setDescription(newDescription)}
+		/>
+
+
+
         </div>
         <button type="submit" className="btn-new">
           Submit

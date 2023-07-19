@@ -16,10 +16,11 @@ const SingleArticle = () => {
               <div>
                 <img className="w-[500px] mx-auto  p-2 " src={art.imageURL} alt="" />
               </div>
-              <div className="flex flex-col justify-between text-center">
-                <h1 className="font-semibold text-5xl text-orange">{art.articleName}</h1>
-                <p className="my-20 whitespace-pre-line text-left">{art.description}</p>
-                
+              <div className="flex flex-col justify-between ">
+                <h1 className="font-semibold text-5xl text-orange text-center">{art.articleName}</h1>
+                <p className="my-20  " dangerouslySetInnerHTML={{__html:art.description}}></p>   
+                {/* whitespace-pre-line --- to show exact text */}
+               
               </div>
             </div>
         </div>

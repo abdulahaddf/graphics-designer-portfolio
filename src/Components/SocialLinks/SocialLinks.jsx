@@ -11,7 +11,7 @@ const SocialLinks = () => {
    <Link to="https://www.facebook.com/ferdoushasan99" target="_blank"><FaFacebook className="hover:text-orange hover:-translate-y-1 duration-300"></FaFacebook></Link>
    <Link to="https://dribbble.com/ferdoushasan99" target="_blank"><AiFillDribbbleCircle className="hover:text-orange hover:-translate-y-1 duration-300">    
             </AiFillDribbbleCircle></Link>
-   <Link to=": https://www.instagram.com/ferdoushasan99" target="_blank"><AiFillInstagram className="hover:text-orange hover:-translate-y-1 duration-300"></AiFillInstagram>
+   <Link to="https://www.instagram.com/ferdoushasan99" target="_blank"><AiFillInstagram className="hover:text-orange hover:-translate-y-1 duration-300"></AiFillInstagram>
                  </Link>
    <Link to="https://www.linkedin.com/in/ferdoushasan99" target="_blank"><AiFillLinkedin className="hover:text-orange hover:-translate-y-1 duration-300"></AiFillLinkedin> 
                     </Link>

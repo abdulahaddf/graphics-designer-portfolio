@@ -27,19 +27,17 @@ const AllArticles = () => {
         {articles.map((art) => (
           <div
             key={art._id}
-            className="glass p-5 rounded-tr-3xl rounded-bl-3xl md:flex gap-2 hover:shadow-xl md:h-[35vh] "
+            className="glass p-5 rounded-tr-3xl overflow-hidden rounded-bl-3xl md:flex gap-2 hover:shadow-xl md:h-[35vh] "
           >
             <div>
-              <img className="md:w-[800px] p-2 " src={art.imageURL} alt="" />
+              <img className="md:max-w-[300px] p-2 " src={art.imageURL} alt="" />
             </div>
             <div className="flex flex-col justify-between">
               <h1 className="font-semibold text-xl text-orange">
                 {art.articleName}
               </h1>
-              <article className="my-2">
-                {art.description.length > 150
-                  ? `${art.description.substring(0, 150)}...`
-                  : art.description}
+              <article className="my-2" dangerouslySetInnerHTML={{__html:art.description.substring(0, 150)}}>
+              
               </article>
               <div className="flex justify-end">
                 <Link to={`/singlearticles/${art._id}`} className="btn-custom">
