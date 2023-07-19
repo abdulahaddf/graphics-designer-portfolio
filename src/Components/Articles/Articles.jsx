@@ -26,13 +26,13 @@ const Articles = () => {
           {articles.slice(0, 4).map((art) => (
             <div
               key={art._id}
-              className="glass p-5 rounded-tr-3xl rounded-bl-3xl lg:flex gap-2 hover:shadow-xl lg:h-[35vh] "
+              className="glass p-5 rounded-tr-3xl rounded-bl-3xl lg:flex gap-2 overflow-hidden hover:shadow-xl lg:h-[35vh] "
             >
               <div>
                 <img
-                  className=" md:w-[800px]  p-2 "
+                  className="md:w-[800px] p-2"
                   src={art.imageURL}
-                  alt=""
+                  alt="article"
                 />
               </div>
               <div className="flex flex-col justify-between">

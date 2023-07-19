@@ -18,7 +18,7 @@ const SingleArticle = () => {
               </div>
               <div className="flex flex-col justify-between text-center">
                 <h1 className="font-semibold text-5xl text-orange">{art.articleName}</h1>
-                <article className="my-2">{art.description}</article>
+                <p className="my-20 whitespace-pre-line text-left">{art.description}</p>
                 
               </div>
             </div>

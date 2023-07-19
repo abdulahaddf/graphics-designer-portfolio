@@ -62,7 +62,7 @@ const Contact = () => {
             <h1 className="text-3xl">Have you any query? lets discuss </h1>{" "}
             <p className="flex items-center text-xl">
               <MdEmail className="mr-1 text-orange" />
-              <a href="mailto:abdulahad.df1@gmail.com" className="hover:text-orange">
+              <a href="mailto:ferdoushasan40@gmail.com" className="hover:text-orange">
                 {email}
               </a>
             </p>{" "}

@@ -30,7 +30,7 @@ const AllArticles = () => {
             className="glass p-5 rounded-tr-3xl rounded-bl-3xl md:flex gap-2 hover:shadow-xl md:h-[35vh] "
           >
             <div>
-              <img className="md:w-[800px]  p-2 " src={art.imageURL} alt="" />
+              <img className="md:w-[800px] p-2 " src={art.imageURL} alt="" />
             </div>
             <div className="flex flex-col justify-between">
               <h1 className="font-semibold text-xl text-orange">

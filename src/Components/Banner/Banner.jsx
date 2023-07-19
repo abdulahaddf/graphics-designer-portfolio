@@ -35,7 +35,7 @@ const Banner = () => {
 
         <div className="flex justify-center">
           <figure className="relative">
-            <img className="w-full" src="https://i.ibb.co/Rzz5rRQ/Image.png" alt="" />
+            <img className="w-full" src="/banner.png" alt="" />
 
             <img className="w-12 absolute top-[9vh] left-[8vw] animate-bounce custom-animation duration-500 md:w-8 md:top-[15%] md:left-[20%] lg:w-10 lg:top-[20%] lg:left-[20%]"
               src="https://i.ibb.co/zJP27gr/Adobe-Creative-Cloud-rainbow-icon-svg.png" alt="" />
