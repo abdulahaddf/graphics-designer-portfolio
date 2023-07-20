@@ -27,6 +27,7 @@ const Projects = () => {
           <div
             key={pro._id}
             className="overflow-hidden relative transition duration-200 transform hover:-translate-y-2 rounded shadow-lg hover:shadow-2xl"
+            data-aos="fade-up"
           >
             <div className="relative">
               <img

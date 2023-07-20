@@ -12,7 +12,7 @@ const Testimonials = () => {
 
   return (
     <section name="testimonials" className='my-20 lg:my-5 '>
-        <h1 className='heading my-10 mb-24 md:mb-0 pb-2 '>Testimonials</h1>
+        <h1 className='heading my-10 mb-24 lg:mb-0 pb-2 '>Testimonials</h1>
     <div className="flex justify-center items-center h-[60vh]" data-aos="fade-up">
       <div className="w-11/12 ">
         <Swiper
@@ -30,7 +30,7 @@ const Testimonials = () => {
           modules={[Autoplay, Pagination, Navigation]}
           
          
-          className="swiper"
+          className="swiper h-[70vh] lg:h-full"
         >
           <SwiperSlide className="w-11/12  mx-auto pb-20">
            <div className='text-center'>

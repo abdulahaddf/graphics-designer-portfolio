@@ -91,22 +91,23 @@ const Contact = () => {
                 name="user_name"
                 value={user_name}
                 placeholder="Enter Your Name"
-                className="input input-bordered  md:w-[500px] border-orange"
+                className="input input-bordered  md:w-3/5 border-orange"
                 required
-              />{" "}
+              />{" "} 
+              <br />
               <input
                 type="email"
                 name="user_email"
                 value={user_mail}
                 placeholder="Enter Your Mail"
-                className="input input-bordered  md:w-[500px] my-3 border-orange"
+                className="input input-bordered  md:w-3/5 my-3 border-orange"
                   required
               />
             </div>{" "}
             <textarea
               name="message"
               value={user_message}
-              className="textarea  md:w-[500px] border-orange"
+              className="textarea  md:w-3/5 border-orange"
               placeholder="Enter your message"
             ></textarea>{" "}
             <button

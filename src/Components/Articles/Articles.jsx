@@ -26,7 +26,8 @@ const Articles = () => {
           {articles.slice(0, 4).map((art) => (
             <div
               key={art._id}
-              className="glass p-5 rounded-tr-3xl rounded-bl-3xl lg:flex gap-2 overflow-hidden hover:shadow-xl lg:h-[35vh] "
+              className="glass p-5 rounded-tr-3xl rounded-bl-3xl lg:flex gap-2 overflow-hidden hover:shadow-xl lg:h-[40vh] "
+              data-aos="fade-up"
             >
               <div>
                 <img
