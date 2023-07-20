@@ -22,30 +22,40 @@ const AllArticles = () => {
   return (
     <div>
       <Navbar />
-      <h1 className="heading mt-20">All Articles</h1>
+    
+      <h1 className="heading mt-20 pb-2">All Blogs</h1>
       <section className="grid md:grid-cols-2 gap-4 w-11/12 mx-auto justify-center items-center my-20 z-10">
         {articles.map((art) => (
           <div
-            key={art._id}
-            className="glass p-5 rounded-tr-3xl overflow-hidden rounded-bl-3xl md:flex gap-2 hover:shadow-xl md:h-[35vh] "
-          >
-            <div>
-              <img className="md:max-w-[300px] p-2 " src={art.imageURL} alt="" />
-            </div>
-            <div className="flex flex-col justify-between">
-              <h1 className="font-semibold text-xl text-orange">
-                {art.articleName}
-              </h1>
-              <article className="my-2" dangerouslySetInnerHTML={{__html:art.description.substring(0, 150)}}>
-              
-              </article>
-              <div className="flex justify-end">
-                <Link to={`/singlearticles/${art._id}`} className="btn-custom">
-                  Read More
+              key={art._id}
+              className="glass p-5 rounded-tr-3xl rounded-bl-3xl xl:flex justify-center items-center gap-2 overflow-hidden hover:shadow-xl
+               xl:h-[40vh] mx-auto"
+              data-aos="fade-up"
+            >
+              <div>
+                <img
+                  className="max-w-[300px] mx-auto p-2"
+                  src={art.imageURL}
+                  alt="article"
+                />
+              </div>
+              <div className="flex flex-col justify-between">
+                <Link  to={`/singlearticles/${art._id}`} className="font-semibold text-xl text-orange">
+                  {art.articleName}
                 </Link>
+                <div className="my-2 " dangerouslySetInnerHTML={{__html:art.description.substring(0, 150)}}>
+                 
+                </div>
+                <div className="flex justify-end">
+                  <Link
+                    to={`/singlearticles/${art._id}`}
+                    className="btn-custom"
+                  >
+                    Read More
+                  </Link>
+                </div>
               </div>
             </div>
-          </div>
         ))}
       </section>
     </div>

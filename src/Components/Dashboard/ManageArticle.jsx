@@ -14,7 +14,7 @@ const ManageArticle = () => {
   const handleDelete = (art) => {
     Swal.fire({
       title: "Are you sure?",
-      text: "Your selected class will be deleted!",
+      text: "Your selected Blog will be deleted!",
       icon: "warning",
       showCancelButton: true,
       confirmButtonColor: "#0891B2",
@@ -30,7 +30,7 @@ const ManageArticle = () => {
             if (data.deletedCount > 0) {
               Swal.fire(
                 "Deleted!",
-                "Your Article has been deleted.",
+                "Your Blog has been deleted.",
                 "success"
               );
             }
@@ -41,7 +41,7 @@ const ManageArticle = () => {
 
   return (
     <div>
-      <h1 className="heading my-20">Manage All Articles</h1>
+      <h1 className="heading my-20">Manage All Blogs</h1>
 
       <div className="">
         <table className="table table-zebra shadow-xl w-full  text-center overflow-x-auto">

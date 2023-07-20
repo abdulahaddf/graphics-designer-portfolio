@@ -56,7 +56,7 @@ const Contact = () => {
     <div name="contact" className="w-11/12 mx-auto mt-10 bg-cover bg-[url('https://i.ibb.co/cLWYh47/BG-2-01-2.png')]">
       <h1 className="heading pb-2">Contact Me</h1>
       <section id="contact" className="mt-20 pb-10 md:pb-36 " data-aos="fade-up">
-        <div className="flex flex-wrap p-10  justify-evenly gap-16 mt-10 glass  rounded-tr-3xl rounded-bl-3xl  hover:shadow-xl">
+        <div className="lg:flex p-10  justify-evenly gap-16 mt-10 glass  rounded-tr-3xl rounded-bl-3xl  hover:shadow-xl">
           <div className="space-y-4  p-5 ">
             {" "}
             <h1 className="text-3xl">Have you any query? lets discuss </h1>{" "}

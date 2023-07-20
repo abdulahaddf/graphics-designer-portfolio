@@ -69,7 +69,7 @@ const Navbar = () => {
                    Services
                   </Link>
                   <Link className="hover:text-orange hover:scale-125 duration-300" activeClass="active" to="articles" spy={true} smooth={true} offset={-20} duration={500} >
-                   Articles
+                   Blog
                   </Link>
                 
                  
@@ -133,7 +133,7 @@ const Navbar = () => {
                    Services
                   </Link>
                   <Link className="hover:text-orange hover:scale-125 duration-300" activeClass="active" to="articles" spy={true} smooth={true} offset={-20} duration={500} >
-                   Articles
+                   Blog
                   </Link>
              
              

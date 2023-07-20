@@ -28,7 +28,7 @@ const Admin = () => {
   };
 
     return (
-        <div className="w-1/2 mx-auto p-20 my-32 glass">
+        <div className="w-11/12 md:w-1/2 mx-auto p-20 my-32 glass">
             <h1 className="heading my-10">Admin</h1>
             <form onSubmit={handleSubmit} className="max-w-sm mx-auto">
       <div className="mb-4">

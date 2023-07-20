@@ -31,25 +31,31 @@ const CreateArticle = () => {
           Swal.fire({
             position: "top-end",
             icon: "success",
-            title: "Article added successfully",
+            title: "Blog added successfully",
             showConfirmButton: false,
             timer: 1500,
           });
         }
       });
-    console.log(data);
+      Swal.fire({
+        position: "top-end",
+        icon: "error",
+        title: "Blog is not uploaded successfully",
+        showConfirmButton: false,
+        timer: 1500,
+      });
   };
 
   return (
     <div>
-      <h1 className="heading my-10">Create An Article</h1>
+      <h1 className="heading my-10">Create a Blog</h1>
       <form onSubmit={handleSubmit} className="max-w-3xl mx-auto">
         <div className="mb-4">
           <label
             htmlFor="articleName"
             className="block mb-2 font-medium text-gray-700"
           >
-            Article Name
+            Blog Name
           </label>
           <input
             type="text"

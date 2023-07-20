@@ -61,8 +61,7 @@ replied to my requests and made all the necessary changes, resulting in a great 
            <div className='text-center'>
            <p className="text-lg">Ferdous was very professional, responsive, and easy to work with. He gave me his expert advise
 and did a good job redirected me back to what made the most sense for my needs. We went
-through a lot of revisions to get to the final logo design and Ferdous was patient and
-accommodating through out the process. I am very pleased with the outcome and his level of
+through a lot of revisions to get to the final logo design. I am very pleased with the outcome and his level of
 attention to my project and would definitely use his design services again.</p>
            <img className='w-28 mx-auto my-8 rounded-full' src="https://i.ibb.co/g97rsz8/Client-4.jpg" alt="" />
            <h1>Subhan Shah</h1>
