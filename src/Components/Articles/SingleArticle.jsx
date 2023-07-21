@@ -1,10 +1,14 @@
 import { useLoaderData } from "react-router-dom";
 import Navbar from "../Nav/Navbar";
+import { useEffect } from "react";
 
 
 const SingleArticle = () => {
     const art = useLoaderData();
     
+    useEffect(()=> {
+      window.scrollTo(0, 0);
+    },[])
     return (
         <div>
             <Navbar></Navbar>

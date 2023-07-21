@@ -1,5 +1,5 @@
 import PictureSlider from "./PictureSlider";
-
+//this will show a picture first and then if you click it, it will show a slider which will contain array of pictures
 const project1 = [
    
   ];
@@ -22,9 +22,7 @@ const project3 = [
 const project4 = [
     
   ];
-const project5 = [
-    
-  ];
+
 
 const Projects = () => {
     return (
