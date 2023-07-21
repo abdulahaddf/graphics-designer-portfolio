@@ -56,8 +56,8 @@ const Contact = () => {
     <div name="contact" className="w-11/12 mx-auto mt-10 bg-cover bg-[url('https://i.ibb.co/cLWYh47/BG-2-01-2.png')]">
       <h1 className="heading pb-2">Contact Me</h1>
       <section id="contact" className="mt-20 pb-10 md:pb-36 " data-aos="fade-up">
-        <div className="lg:flex p-10  justify-evenly gap-16 mt-10 glass  rounded-tr-3xl rounded-bl-3xl  hover:shadow-xl">
-          <div className="space-y-4  p-5 ">
+        <div className="lg:flex p-3 md:p-10  justify-evenly gap-16 mt-10 glass  rounded-tr-3xl rounded-bl-3xl  hover:shadow-xl">
+          <div className="space-y-4  md:p-5 ">
             {" "}
             <h1 className="text-3xl">Have you any query? lets discuss </h1>{" "}
             <p className="flex items-center text-xl">
@@ -80,18 +80,18 @@ const Contact = () => {
 
          
           <form
-            className=" text-black p-5  mx-auto"
+            className=" text-black p-5  mx-auto md:w-[600px]"
             ref={form}
             onSubmit={sendEmail}
           >
-            <div className="mb-2 md:w-[600px]">
+            <div className="mb-2 ">
               {" "}
               <input
                 type="text"
                 name="user_name"
                 value={user_name}
                 placeholder="Enter Your Name"
-                className="input input-bordered  md:w-3/5 border-orange"
+                className="input input-bordered w-11/12 lg:w-3/4 border-orange"
                 required
               />{" "} 
               <br />
@@ -100,14 +100,14 @@ const Contact = () => {
                 name="user_email"
                 value={user_mail}
                 placeholder="Enter Your Mail"
-                className="input input-bordered  md:w-3/5 my-3 border-orange"
+                className="input input-bordered w-11/12  lg:w-3/4 my-3 border-orange"
                   required
               />
             </div>{" "}
             <textarea
               name="message"
               value={user_message}
-              className="textarea  md:w-3/5 border-orange"
+              className="textarea w-11/12 lg:w-3/4 border-orange"
               placeholder="Enter your message"
             ></textarea>{" "}
             <button

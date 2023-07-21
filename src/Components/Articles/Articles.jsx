@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
+import LazyLoad from "react-lazyload";
 const Articles = () => {
   AOS.init();
   const [articles, setArticles] = useState([]);
@@ -32,11 +33,14 @@ const Articles = () => {
               data-aos="fade-up"
             >
               <div>
+                <LazyLoad>
+
                 <img
                   className="max-w-[300px] mx-auto p-2"
                   src={art.imageURL}
                   alt="article"
-                />
+                  />
+                  </LazyLoad>
               </div>
               <div className="flex flex-col justify-between">
                 <Link  to={`/singlearticles/${art._id}`} className="font-semibold text-xl text-orange">

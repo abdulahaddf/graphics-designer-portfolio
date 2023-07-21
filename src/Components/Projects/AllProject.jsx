@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { MdOutlineSubdirectoryArrowRight } from "react-icons/md";
 import Navbar from "../Nav/Navbar";
+import LazyLoad from "react-lazyload";
 
 const AllProject = () => {
   const [projects, setprojects] = useState([]);
@@ -29,11 +30,14 @@ const AllProject = () => {
               className="overflow-hidden relative transition duration-200 transform hover:-translate-y-2 rounded shadow-lg hover:shadow-2xl"
             >
               <div className="relative">
+                <LazyLoad>
+
                 <img
                   src={pro.imageURL}
                   alt="project"
                   className="object-cover w-full transition-all duration-300 transform hover:scale-110"
-                />
+                  />
+                  </LazyLoad>
               </div>
               <p className="py-3 text-center">{pro.title}</p>
               <div className="bg-black px-6 py-4 bg-opacity-50 opacity-0 hover:opacity-100 text-white absolute inset-0 transition-opacity duration-200 flex flex-col items-center justify-center text-center">

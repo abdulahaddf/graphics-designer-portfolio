@@ -3,6 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
 import { MdOutlineSubdirectoryArrowRight } from "react-icons/md";
+import LazyLoad from "react-lazyload";
 const Projects = () => {
   AOS.init();
   const [projects, setprojects] = useState([]);
@@ -31,11 +32,14 @@ const Projects = () => {
                data-aos="fade-up"
              >
                <div className="relative ">
+                <LazyLoad>
+
                  <img
                    src={pro.imageURL}
                    alt="project"
                    className="object-cover lg:max-w-[600px] mx-auto transition-all duration-300 transform hover:scale-110"
-                 />
+                   />
+                   </LazyLoad>
                </div>
                <p className="py-3 text-3xl text-center">{pro.title}</p>
                <div className="bg-black px-6 py-4 bg-opacity-50 opacity-0 hover:opacity-100 text-white absolute inset-0 transition-opacity duration-200 flex flex-col items-center justify-center text-center">

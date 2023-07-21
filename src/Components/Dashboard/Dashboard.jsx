@@ -72,7 +72,7 @@ const Dashboard = () => {
                       }
                       to="/dashboard/create"
                     >
-                      <FaRegFlag></FaRegFlag>Create An Article{" "}
+                      <FaRegFlag></FaRegFlag>Create a Blog{" "}
                     </NavLink>
                   </li>
 
@@ -85,7 +85,7 @@ const Dashboard = () => {
                       }
                       to="/dashboard/manage"
                     >
-                      <AiOutlineSelect></AiOutlineSelect>Manage Articles
+                      <AiOutlineSelect></AiOutlineSelect>Manage Blogs
                     </NavLink>
                   </li>
                 

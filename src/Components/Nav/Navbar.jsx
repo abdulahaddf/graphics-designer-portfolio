@@ -74,11 +74,7 @@ const Navbar = () => {
                 
                  
 
-                  <div className="fixed right-1 bottom-1 text-6xl z-40">
-         <Link className="hover:text-orange hover:shadow-xl z-10" activeClass="active" to="home" spy={true} smooth={true} offset={-150} duration={500} >
-                 <AiFillUpCircle/>
-                  </Link>
-         </div>
+                 
  
                   </ul>
                 </div>
