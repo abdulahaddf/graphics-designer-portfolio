@@ -1,7 +1,6 @@
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Link } from 'react-scroll'
-import { AiFillUpCircle } from "react-icons/ai";
 
 import HomeLink from "../SocialLinks/HomeLink";
 import LogoLink from "../SocialLinks/LogoLink";
