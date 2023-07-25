@@ -28,10 +28,10 @@ const About = () => {
                 <Lottie options={defaultOptions} />
                 </div>
                 <div className='text-xl font-medium bg-white md:h-[87px]  text-center shadow-xl rounded-lg px-2 py-2  absolute left-[-10%] bottom-[80%] md:top-[10%]' >
-                    <p className=''><span className='text-3xl md:text-5xl text-[#10b981]'>0<CountUp delay={1} end={4} duration={3}></CountUp>+</span><br /> Years of Experience </p>
+                    <p className=''><span className='text-3xl md:text-5xl text-[#10b981]'>0<CountUp enableScrollSpy={true} delay={1} end={4} duration={3}></CountUp>+</span><br /> Years of Experience </p>
                 </div>
                 <div className='text-xl bg-white md:w-48 text-center shadow-xl rounded-lg p-2 absolute top-[80%] md:top-[70%] left-[70%] md:right-[10%]'>
-                <p className=''><span className='text-3xl md:text-5xl text-[#6366f1]'><CountUp delay={1} end={500} duration={3}></CountUp>+</span><br /> Total Projects </p>
+                <p className=''><span className='text-3xl md:text-5xl text-[#6366f1]'><CountUp enableScrollSpy={true} delay={1} end={500} duration={3}></CountUp>+</span><br /> Total Projects </p>
                 </div>
             </div>
             <div className="lg:w-2/5 space-y-3 mt-10 md:mt-0"

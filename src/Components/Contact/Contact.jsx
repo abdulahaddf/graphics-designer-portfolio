@@ -59,7 +59,7 @@ const Contact = () => {
         <div className="lg:flex p-3 md:p-10  justify-evenly gap-16 mt-10 glass  rounded-tr-3xl rounded-bl-3xl  hover:shadow-xl">
           <div className="space-y-4  md:p-5 ">
             {" "}
-            <h1 className="text-3xl">Have you any query? lets discuss </h1>{" "}
+            <h1 className="text-3xl">Any query? lets discuss </h1>{" "}
             <p className="flex items-center text-xl">
               <MdEmail className="mr-1 text-orange" />
               <a href="mailto:ferdoushasan40@gmail.com" className="hover:text-orange">
