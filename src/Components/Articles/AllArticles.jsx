@@ -47,9 +47,7 @@ const AllArticles = () => {
                 <Link  to={`/singlearticles/${art._id}`} className="font-semibold text-xl text-orange">
                   {art.articleName}
                 </Link>
-                <div className="my-2 " dangerouslySetInnerHTML={{__html:art.description.substring(0, 150)}}>
-                 
-                </div>
+                <div className="my-2" dangerouslySetInnerHTML={{ __html: art.description.length > 150 ? art.description.substring(0, 150) + ' ...' : art.description }}></div>
                 <div className="flex justify-end">
                   <Link
                     to={`/singlearticles/${art._id}`}
