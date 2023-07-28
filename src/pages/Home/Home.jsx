@@ -11,6 +11,7 @@ import Projects from "../../Components/Projects/Projects";
 import Services from "../../Components/Services/Services";
 import Testimonials from "../../Components/Testimonials/Testimonials";
 import { AiFillUpCircle } from "react-icons/ai";
+import Skills from "../../Components/Skills/Skills";
 
 const Home = () => {
   return (
@@ -28,6 +29,7 @@ const Home = () => {
       <Services></Services>
       <Articles></Articles>
       <Testimonials></Testimonials>
+      <Skills></Skills>
       <Contact></Contact>
       <Footer></Footer>
       <div className="fixed right-1 bottom-1 text-4xl md:text-6xl z-40">
