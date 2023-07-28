@@ -1,6 +1,6 @@
 import  { useEffect, useState } from 'react';
 import ProgressBar from '@ramonak/react-progress-bar';
-// import '@ramonak/react-progress-bar/dist/index.css';
+
 
 import animationData from '../../../public/ani2.json';
 import Lottie from 'react-lottie';
@@ -47,7 +47,7 @@ const Skills = () => {
                     : item.animatedPercentage,
               }))
             );
-          }, 20);
+          }, 200);
 
           // Stop the timer when the animation is complete
           if (progressDataWithAnimation.every((item) => item.animatedPercentage >= item.percentage)) {

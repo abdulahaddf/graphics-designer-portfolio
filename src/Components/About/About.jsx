@@ -18,7 +18,7 @@ const About = () => {
     return (
        
      <div name="about" className="my-10 lg:my-20 bg-cover h-full bg-[url('https://i.ibb.co/V2ZDMdJ/BG-1-01-1.png')] " data-aos="fade-up"
-     data-aos-anchor-placement="center-bottom"
+  
     
      >
         <h1 className="heading pb-2">About Me</h1>
@@ -36,7 +36,7 @@ const About = () => {
             </div>
             <div className="lg:w-2/5 space-y-3 mt-10 md:mt-0"
              data-aos="fade-up"
-             data-aos-anchor-placement="center-bottom"
+           
              data-aos-duration="900"
             >
                 <p className="text-orange text-xl">I&apos;m a Designer</p>
