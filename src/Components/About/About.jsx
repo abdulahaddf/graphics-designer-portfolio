@@ -19,7 +19,7 @@ const About = () => {
        
      <div name="about" className="my-10 lg:my-20 bg-cover h-full bg-[url('https://i.ibb.co/V2ZDMdJ/BG-1-01-1.png')] " data-aos="fade-up"
      data-aos-anchor-placement="center-bottom"
-     data-aos-duration="600"
+    
      >
         <h1 className="heading pb-2">About Me</h1>
            <section className="lg:flex justify-evenly w-4/5 mx-auto mt-20">
